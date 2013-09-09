@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+<link rel="stylesheet" type="text/css" href="css/index.css"/>
+
+ <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"/>
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css" />
+  <link rel="stylesheet" href="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.css">
+<style>
+       
+  #progres{
+    
+	width: 150px;
+	height: 17px;
+ 	color:#F63;
+    
+}
+
+#h3{
+	
+	text-shadow:#FFC;
+	
+}
+	
+#logo{
+	
+	alignment-adjust:central;
+	
+	
+	}	
+	
+</style>
+        
+<title>Universidad Dominicana O&M </title>
+
+<script>
+
+$(document).ready(function(e) {
+	
+$.mobile.showPageLoadingMsg();
+
+});
+// background:url(../img/logo.png) no-repeat center top;
+//
+
+</script>        
+
+<script>
+
+$(document).ready(function(e) {
+
+
+});
+
+
+</script>
+
+<script>
+
+
+window.onload = addTenPercent(); 
+
+function addTenPercent() { 
+
+var bar = document.getElementById("progres"); 
+
+setInterval(addTenPercent, 100);
+
+bar.value += 1;
+
+if(bar.value==100){
+	
+
+     document.getElementById('valor').innerHTML='100%';	
+	 
+	}
+ };
+        
+</script>
+
+    </head>
+    
+    <body>
+        <div class="app">
+         <br>
+            </br>
+               
+            
+        <img src="img/logo.png" height="100%" width="100%" id="logo"></img>
+              
+            <h3>Saber, Pensar, Trabajar</h3>
+      
+            <div id="deviceready" class="blink">
+            
+                <p class="event listening">AppO&M 1.0</p>
+
+                <p class="event received">Cargando.....</p>
+    
+            </div>
+              
+            <br>
+            
+        <center><progress  style="animation:running" id="progres"  max="100" value="0" title="100%"></progress><strong><div id="valor"></div></strong></center>    
+            	</br>
+            
+        </div>
+        
+        <script type="text/javascript" src="cordova-2.5.0.js"></script>
+    
+        <script type="text/javascript" src="js/index.js"></script>
+    
+        <script type="text/javascript">
+    
+	        app.initialize();
+			
+			$(document).ready(function(e) {
+                
+				//$.mobile.showPageLoadingMsg('Cargando...'); 
+				alert('Cargando...');
+				
+            });
+    
+	    </script>
+        
+    </body>
+</html>
