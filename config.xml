@@ -6,7 +6,7 @@
         id        = "com.phonegap.Mobile"
         version   = "1.0.0">
 
-    <name>Hello World</name>
+    <name>University</name>
 
     <description>
         Mobile APP
@@ -63,11 +63,11 @@
   
     <param name="APP_ID" value="155392544656734"/>
 	
-    <param name="APP_NAME" value="Conectar"/>
+    <param name="APP_NAME" value="JqueryMobile"/>
 	
 </gap:plugin>
 
-<gap:plugin name="com.arnia.plugins.smsbuilder" version="0.1.0" />
+
 
     <!-- Define app icon for each platform. -->
     <icon src="img/ios/logo_small.png"/>
