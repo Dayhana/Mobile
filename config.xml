@@ -55,7 +55,7 @@
     -->
  <gap:plugin name="com.phonegap.plugins.childbrowser"/>
   
- <gap:plugin name="com.phonegap.plugins.childbrowser" version="4.2.1"/>
+  <gap:plugin name="com.phonegap.plugins.childbrowser" version="4.2.1"/>
  
  <!-- Plugin De Faceboock--> 
 
